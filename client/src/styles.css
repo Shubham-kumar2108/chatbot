@@ -1,0 +1,159 @@
+:root {
+    --bg: #0f172a;
+    --panel: #111827;
+    --text: #e5e7eb;
+    --muted: #9ca3af;
+    --accent: #22d3ee;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: ui-sans-serif, system-ui, Arial;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: .3px;
+}
+
+.card {
+    background: var(--panel);
+    border: 1px solid #1f2937;
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+}
+
+.button {
+    background: var(--accent);
+    color: #0b1324;
+    border: none;
+    padding: .6rem 1rem;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button.secondary {
+    background: #0b1324;
+    color: var(--text);
+    border: 1px solid #1f2937;
+}
+
+.input,
+.textarea,
+.select {
+    width: 100%;
+    background: #0b1324;
+    color: var(--text);
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: .6rem .8rem;
+}
+
+.textarea {
+    min-height: 90px;
+}
+
+.row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background: #0b1324;
+    border: 1px solid #1f2937;
+    border-radius: 999px;
+    padding: .2rem .6rem;
+    color: var(--muted);
+    font-size: .8rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    gap: .6rem;
+    align-items: flex-start;
+    padding: .6rem;
+    border-radius: 10px;
+    border: 1px solid #1f2937;
+    background: #0b1324;
+}
+
+.actions {
+    display: flex;
+    gap: .5rem;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    height: 60vh;
+    overflow: auto;
+    padding: .6rem;
+}
+
+.msg {
+    max-width: 80%;
+    padding: .6rem .8rem;
+    border-radius: 12px;
+    line-height: 1.35;
+}
+
+.msg.user {
+    background: #0b1324;
+    border: 1px solid #1f2937;
+    align-self: flex-end;
+}
+
+.msg.bot {
+    background: #0a3a42;
+    border: 1px solid #0e5966;
+    align-self: flex-start;
+}
+
+.inputRow {
+    display: flex;
+    gap: .6rem;
+    margin-top: .8rem;
+}
+
+hr.sep {
+    border: none;
+    border-top: 1px solid #1f2937;
+    margin: 1rem 0;
+}
+
+.small {
+    color: var(--muted);
+    font-size: .85rem;
+}
