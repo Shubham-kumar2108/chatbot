@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className="container">
       <div className="header">
-        <div className="title">🎓 University Chatbot </div>
+        <div className="title">🎓 College Chatbot </div>
         <div className="row" style={{alignItems:'center'}}>
           <button className={`button ${tab==='chat' ? '' : 'secondary'}`} onClick={() => setTab('chat')}>Chat</button>
           <button className={`button ${tab==='admin' ? '' : 'secondary'}`} onClick={() => setTab('admin')}>Admin</button>
